@@ -28,7 +28,7 @@ public class ConsumerDemoAssignSeek {
 //        properties.setProperty(CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         properties.setProperty(CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, "cluster.playground.cdkt.io:9092");
         properties.setProperty(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SASL_SSL");
-        properties.setProperty(SaslConfigs.SASL_JAAS_CONFIG, "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"6hiWlwa3a3RibZIBq2lNEP\" password=\"8a575166-4c7d-4900-ad2c-f2b4a510f0ce\";");
+        properties.setProperty(SaslConfigs.SASL_JAAS_CONFIG, "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"2yshdtqHlkkvBuaB9JZdYn\" password=\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29uZHVrdG9yLmlvIiwic291cmNlQXBwbGljYXRpb24iOiJhZG1pbiIsInVzZXJNYWlsIjpudWxsLCJwYXlsb2FkIjp7InZhbGlkRm9yVXNlcm5hbWUiOiIyeXNoZHRxSGxra3ZCdWFCOUpaZFluIiwib3JnYW5pemF0aW9uSWQiOjc0MTk2LCJ1c2VySWQiOjg2MzAxLCJmb3JFeHBpcmF0aW9uQ2hlY2siOiI2N2JmNDA2Ni02NWM3LTRiOTQtOGEyMy0zNGVhMTUxYmJmZjAifX0.vVfXcIYTcP6djnRGEHk3ZnP1kGypwr_kTCyxieJHpSY\";");
         properties.setProperty(SaslConfigs.SASL_MECHANISM, "PLAIN");
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
