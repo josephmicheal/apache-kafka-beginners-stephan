@@ -87,6 +87,6 @@ kafka-topics.sh --bootstrap-server localhost:9092 --topic new_topic_2 --describe
 
 
 # produce with keys
-kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first_topic --property parse.key=true --property key.separator=:
+kafka-console-producer --bootstrap-server localhost:9092 --topic first_topic --property parse.key=true --property key.separator=:
 >example key:example value
 >name:Stephane

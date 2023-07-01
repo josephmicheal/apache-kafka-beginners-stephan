@@ -15,7 +15,7 @@ sasl.mechanism=PLAIN
 # Start running commands
 kafka-topics.sh 
 
-kafka-topics.sh --command-config playground.config --bootstrap-server cluster.playground.cdkt.io:9092
+kafka-topics --command-config playground.config --bootstrap-server cluster.playground.cdkt.io:9092
 
 kafka-topics.sh --command-config playground.config --bootstrap-server cluster.playground.cdkt.io:9092 --create --topic first_topic
 
@@ -59,5 +59,5 @@ kafka-topics.sh --bootstrap-server localhost:9092 --list
 kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --describe
 
 # Delete a topic 
-kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --delete
+kafka-topics --bootstrap-server localhost:9092 --topic first_topic --delete
 # (only works if delete.topic.enable=true)
